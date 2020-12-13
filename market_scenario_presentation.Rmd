@@ -1,0 +1,68 @@
+---
+title: "Market Scenario Example: Presentation"
+output: 
+  ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Scenario
+
+## Background problem | Background & Problem
+
+* Serious stock traders that take a technical approach can spend a lot of time monitoring indicators for dozens of portfolio assets
+
+* A lack of an alert system may result in the trader being late in seeing an important buy or sell signal 
+
+## Solution | Solution
+
+* E*TRADE releases a new service that gives alerts once a certain market technical indicator reaches a given threshold. 
+    * ex: Relative Strength Index (RSI) going above 70 suggests an asset is overbought
+    
+This saves the customer valuable time and improves use of technical indicators to increase gains, prevent losses, etc.
+
+## Benefits | Benefits
+
+* Gives E*TRADE customers a trading advantage over other platforms
+
+* Helps technical traders with highly-diversified portfolios to keep track of buy/sell signals
+
+## Execution | Execution
+
+The proposed service works as such:
+
+1. Customer enters technical indicator(s) and details or thresholds to be alerted for 
+2. Email is sent with indicator details and a link to a customized webpage for that stock
+3. Once on the page, a candle chart is displayed with charts and figures of the corresponding technical indicators
+
+The user can set an option that pulls up charts of their other favorite indicators as well.
+
+## Example | Example
+
+1. Customer wants to be alerted when the RSI for any stock in their portfolio passes above 70
+2. AAPL hits an RSI of over 70
+3. Customer receives link to AAPL's stock page and summarized numbers
+4. Webpage opens with candle chart and time series chart of RSI
+
+# Design
+
+## Budget | Budget
+
+The proposed budget was listed as $50,000
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+### Make table
+a <- c('Participant Incentives',
+       'Financial and survey data collection',
+       'Analysis, visualizations, and results write-up',
+       'Safety net'
+)
+b <- c('$30,000', '$5,000', '$10,000', '$5,000')
+
+prnt.df <- cbind(a, b)
+
+### Print table
+knitr::kable(prnt.df, col.names=NULL)
+```
