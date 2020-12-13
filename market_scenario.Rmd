@@ -1,0 +1,391 @@
+---
+title: "Market Research Example"
+author: "Andrew Tamalunas"
+output:
+  html_document:
+    df_print: paged
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
+---
+
+<style>
+.indented {
+  padding-left: 50pt;
+  padding-right: 50pt;
+}
+</style>
+
+<!-- 
+On embedding presentation:
+https://stackoverflow.com/questions/39696866/how-to-put-google-slide-on-jekyll 
+</-->
+
+___
+
+# Sections
+
+___
+
+[Part 1: Marketing Scenario](#part1) <BR>
+    
+[Part 2: Research Brief](#part2) <BR>
+
+<p class="indented">
+  [i. Background & Problem Statement](#part2-backgroundstatement)   <BR>
+  [ii. Objectives & Design](#part2-objectivesdesign) <BR>
+  [iii. Participants & Sampling](#part2-participants)
+</p>
+
+[Part 3: Survey Design](#part3) <BR>
+<p class="indented">
+  [i. Administering Survey](#part3-administration) <BR>
+  [ii. Survey Objective](#part3-objective) <BR>
+  [iii. Mock Survey](#part3-mocksurvey)
+</p>
+
+[Part 4: Experiment Design](#part4) <BR>
+<p class="indented">
+  [i. Experiment Description](#part4-description) <BR>
+  [ii. Experimental Variables](#part4-idvariables)
+</p>
+
+___
+
+# Part 1: Create Marketing Scenario {#part1}
+
+___
+
+`Choose an existing brand and create a new product or service for that brand.`
+`For instance, a new line of energy drink for Red Bull. In a single paragraph` 
+`(200 words max) describe the new product or service (i.e. features, advantages,` `benefits, etc.) Be sure to also identify the target market of your new product or` `service (i.e. persona of the typical buyer).`
+
+E*TRADE has found satisfactory demand to release a new service that gives alerts once a certain market technical indicator reaches a given threshold (e.g. Relative Strength Index indicating an asset is oversold). This helps technical stock market traders with portfolios that contain many assets to keep track of buy/sell/hold signals without excessive manual monitoring and shifting between pages. The service works by sending an email alert with a link to the stock's page, which opens and displays a candle chart with a chart of the corresponding technical indicator below.
+
+___
+
+# Part 2: Develop a Research Brief {#part2}
+
+___
+
+`a. Background (use your marketing scenario)`
+
+`b. Management problem statement`
+
+`c. Research problem statement`
+
+### Background & Full Problem Statement {#part2-backgroundstatement}
+
+Serious stock traders can have portfolios of dozens of different assets. Technical traders tend to use technical indicators such as the Relative Strength Index (RSI) as initial signals for identifying when their stocks become oversold or overbought. The primary technical indicator is typically then checked against a series of other indicators.
+
+Even if only a couple of indicators are used, repeatedly checking these numbers across a variety of stocks can be a very time-consuming process. Additionally, a lack of alert may result in the trader not seeing an important signal to buy or sell before others.
+
+E*TRADE releases a new service that gives alerts once a certain market technical indicator reaches a given threshold. This: 
+
+1. Gives E*TRADE customers a trading advantage over other platforms
+
+2. Helps technical stock market traders with highly-diversified portfolios to keep track of buy/sell/hold signals 
+
+The service works by sending an email alert with a link to the stock's page, which opens and displays a candle chart with a chart of the corresponding technical indicator below. The user can set an option that pulls up charts of their other favorite indicators as well.
+
+### Management Problem
+
+* How much time will the service save technical traders?
+    * determines whether project should be undergone and if it should be paid or free
+  
+* E*TRADE does not currently have a service that alerts users based on technical indicator thresholds
+
+### Research Problem
+
+* Technical traders spend a lot of time sifting through different technical indicators
+    * proposed service needs to save them time (done through alert re-directing to page of specified data)
+  
+* Traders may also be late in trading if these indicators are not acted on quickly
+
+## Research Objectives & Design {#part2-objectivesdesign}
+
+`d. Research objectives (at least three)`
+
+`e. Research design (justify)`
+
+1. Identify if customers save a significant amount of time looking through stock indicators by using the alert service
+    * pretty much the point of the service
+
+2. Check if time saved per stock is dependent on number of stocks
+    * helps identify more specific audience
+    * determines extent of service appeal 
+
+3. Check if time saved is dependent on total amount invested relative to personal income
+    * psychology: affects perceived probabilities and risk-taking; traders with higher risk investments may spend more time on nitpicking trades to begin with
+
+4. Test customer satisfaction on individual features of the alert service 
+    * have participants take a survey at the end of each month
+    * allows to adjust service throughout data collection process
+
+## Participants & Sampling Methods {#part2-participants}
+
+`f. [Something about eligible population]`
+
+`g. Sampling method and frame (justify)`
+
+### Eligibility 
+
+To be eligible for participating in this research experiment, traders would need to:
+
+1. Be an active client who has spent least 6 months managing their portfolio through the E*TRADE platform 
+
+2. Must use a technical trading approach as a strong influencing factor for buying or selling assets
+
+3. Have a portfolio between 10 and 25 stocks to split them into three groups based on portfolio size:
+    * portfolios with 10-15 stocks
+    * portfolios with 16-20 stocks
+    * portfolios with 21-25 stocks
+
+4. Have a portfolio investment-to-personal income ratio of at least 1:10
+    * will also take note of this ratio to see if splitting ranges of ratios into groups significantly affects results
+
+### Sampling
+
+The sample will be pseudo-random and personal information will be replaced by anonymous identifiers.
+
+An email will be sent out to all clients who have not opted out of receiving emails. The email will request that they fill out a short form to apply for a position in testing the new service. It will also inform them of relevant details from the experimental outline. Information from applications will then be verified. 
+
+To avoid participant dropout becoming a significant experimental detriment, data will be collected from all qualified applicants to pad the sample size.
+
+`estimated sample at start = 2000 participants`
+
+### Time Estimates
+
+`h. Timing (include time estimates for both data gathering and report writing)`
+
+<U>Data Gathering</U>
+
+The study would require participants for three months
+
+* this gives around 60 data points per participant
+
+<U>Report Writing</U>
+
+After one month, researchers will set up an adjustable template for visualization and analysis based that data. 
+
+* this gives frequent updates of how the study is going
+
+### Budget & Spending
+
+`i. Available budget (assume $50,000)`
+
+* Upon completion, participants will receive 3 free months of the alert service after public release
+    * at an estimated value of \$5 per month, this would be <b>\$30,000</b> if all 2000 participants finish the study
+  
+* The E*TRADE platform automatically retrieves the necessary data from the user at the end of each trading day (they'd sign a waiver or legal document beforehand)
+    * est. <b>\$2000</b> to set up website to dataset pipeline
+  
+* The market researcher will send out surveys to participants on the last day of each month
+    * est. <b>\$3000</b> to set up survey to dataset pipeline and keep procedure going
+
+* The analysis, graphing, and write-up can be completed by one or two researchers and proofread by others 
+    * est. total of <b>\$10,000</b>
+    * large dataset, multiple types of data, lengthy analysis, relatively complex statistical model
+    * may need to dip into remaining "safety net" funds 
+  
+* The remaining funds will saved for necessary experimental adjustments
+
+<BR>
+
+<table style="width: 393.75px;" border="1">
+<tbody>
+<tr>
+<td style="width: 349px;">  Participant incentives</td>
+<td style="width: 66.75px;">$30,000</td>
+</tr>
+<tr>
+<td style="width: 349px;">  Financial and survey data collection</td>
+<td style="width: 66.75px;">$5,000</td>
+</tr>
+<tr>
+<td style="width: 349px;">  Analysis, visualizations, and results write-up</td>
+<td style="width: 66.75px;">$10,000</td>
+</tr>
+<tr>
+<td style="width: 349px;">  Safety Net</td>
+<td style="width: 66.75px;">$5,000</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+___
+
+# 3. Survey Design {#part3}
+
+___
+
+`(targeting the audience described in your research brief)`
+
+## Survey Objective {#part3-objective}
+
+`a. State the objective of your survey (100 words max).` 
+`Connect it to the management decision problem and research` `problem statement.`
+
+The objective of the survey(s) is to capture customer satisfaction with individual components of the new service. This will help with minor month-to-month adjustments of the service
+  
+The survey will also help determine how willing the customer is to pay for the service, and how much they would pay for it. This both re-verifies sufficient demand for service and gets a better idea of the value of the service.
+
+## Survey Administration Method {#part3-administration}
+
+`b. State your recommended Survey Method (i.e. mall intercepts, mail,` 
+`online, telephone) and justify`
+
+* Online
+    * E*TRADE is an online service
+
+## Mock survey {#part3-mocksurvey}
+
+`c. Create a survey composed of 10 questions`
+
+`d. Justify how each survey question will support the Research Objectives`
+
+This is kind of an iffy question for the present experimental design, because some preliminary questions should be asked for a pre- experimental manipulation measure. 
+
+* Questions 1 & 2 address the "Time Saved" part of the research objective
+    * a lot of information on time and assets can be gathered without a survey using a pre-experiment survey or through personal data
+    
+* Questions 3-10 address the "Service Satisfaction" part of the research objective
+
+* Some of the content of these questions purposely overlap to measure very similar ideas in different words
+
+<style>
+.surveyy {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
+</style>
+
+<span class="surveyy">
+<p>
+1. How much estimated time per week did you spend manually looking through technical indicators for currently-owned portfolio assets?
+    a. Less than a half-hour (<30 minutes)
+    b. More than a half-hour, less than an hour
+    c. 1-2 hours
+    d. Over 2 hours
+<BR>
+
+2. How much estimated time per week did this service save you in looking through technical indicators?
+    a. No time saved
+    b. Less than an hour
+    c. An hour
+    d. More than an hour
+<BR>
+
+3. What feature of this service do you like the most?
+    a. feature 1
+    b. feature 2
+    c. feature 3
+    d. feature 4
+<BR>
+
+4. What feature do you think needs the most improvement?
+    a. feature 1
+    b. feature 2
+    c. feature 3
+    d. feature 4
+<BR>
+
+5. What features would you like to see added to the service?
+    a. Suggestion 1
+    b. Suggestion 2
+    c. Suggestion 3
+<BR>
+
+6. What word best describes your opinion of this service?
+    a. Essential
+    b. Useful
+    c. Decent
+    d. Underwhelming 
+    e. Useless
+<BR>
+
+7. How helpful would you consider this service in trading stocks?
+    a. Very helpful
+    b. Somewhat helpful
+    c. Makes no difference
+    d. Takes more time 
+<BR>
+
+8. On a scale of 1-5, what would you rate this service?
+    a. 1
+    b. 2
+    c. 3
+    d. 4
+    e. 5
+<BR>
+
+9. How likely would you be to refer this service to fellow traders? 
+    a. Very likely
+    b. Likely
+    c. Not very likely
+    d. Would not recommend
+<BR>
+    
+10. How much would you be willing to pay per month for this service?
+    a. $1-5
+    b. $6-9
+    c. $10
+    d. Over $10
+
+</p>
+</span>
+
+___
+
+# 4. Experiment Design {#part4}
+
+___
+
+`In addition to the survey (#3), your client would like you to describe` 
+`an experiment that could be run (based on your research problem statement and design in #2)`
+
+1. Identify if customers save a significant amount of time looking through stock indicators by using the alert service
+    * pretty much the point of the service
+
+2. Check if time saved per stock is dependent on number of stocks
+    * helps identify more specific audience
+    * determines extent of service appeal 
+
+3. Check if time saved is dependent on total amount invested relative to personal income
+    * psychology: affects perceived probabilities and risk-taking; traders with higher risk investments may spend more time on nitpicking trades to begin with
+
+4. Test customer satisfaction on individual features of the alert service 
+    * have participants take a survey at the end of each month
+    * allows to adjust service throughout data collection process
+
+## Experiment description {#part4-description}
+
+`a. Describe an experiment to test the viability of your new product/service` 
+`(150 words max)`
+
+Participants' would include traders with portfolio sizes that split them into three groups:
+
+## Identify variables {#part4-idvariables}
+ 
+`b. Identify the independent variable`
+
+`c. Identify the dependent variable`
+
+`d. Identify at least one extraneous variable`
+
+### IV
+
+* Use of service or no use of service (before & after contrast)
+
+### DV
+
+* Time spent analyzing technical indicators for currently-owned stocks
+
+### ExtV
+
+* The ratio of money invested to personal income
+
+
