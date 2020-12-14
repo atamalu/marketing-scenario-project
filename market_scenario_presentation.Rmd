@@ -8,28 +8,36 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+<style>
+slides > slide.title-slide hgroup h1 {  
+  color: black;
+  font-size: 30px;
+  letter-spacing: 10;
+}
+</style>
+
 # Scenario
 
-## Background problem | Background & Problem
+## Background & Problem
 
 * Serious stock traders that take a technical approach can spend a lot of time monitoring indicators for dozens of portfolio assets
 
 * A lack of an alert system may result in the trader being late in seeing an important buy or sell signal 
 
-## Solution | Solution
+## Solution 
 
 * E*TRADE releases a new service that gives alerts once a certain market technical indicator reaches a given threshold. 
     * ex: Relative Strength Index (RSI) going above 70 suggests an asset is overbought
     
 This saves the customer valuable time and improves use of technical indicators to increase gains, prevent losses, etc.
 
-## Benefits | Benefits
+## Benefits
 
 * Gives E*TRADE customers a trading advantage over other platforms
 
 * Helps technical traders with highly-diversified portfolios to keep track of buy/sell signals
 
-## Execution | Execution
+## Execution 
 
 The proposed service works as such:
 
@@ -39,7 +47,7 @@ The proposed service works as such:
 
 The user can set an option that pulls up charts of their other favorite indicators as well.
 
-## Example | Example
+## Example 
 
 1. Customer wants to be alerted when the RSI for any stock in their portfolio passes above 70
 2. AAPL hits an RSI of over 70
@@ -48,7 +56,7 @@ The user can set an option that pulls up charts of their other favorite indicato
 
 # Design
 
-## Budget | Budget
+## Budget 
 
 The proposed budget was listed as $50,000
 
@@ -66,3 +74,11 @@ prnt.df <- cbind(a, b)
 ### Print table
 knitr::kable(prnt.df, col.names=NULL)
 ```
+
+## Time Estimates
+
+* Participants use service for three months
+    * gives around 60 data points per participant
+
+* After one month, researchers will set up an adjustable template for visualization and analysis based that data
+    * gives frequent updates of how the study is going

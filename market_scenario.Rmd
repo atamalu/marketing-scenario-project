@@ -60,7 +60,7 @@ ___
 `For instance, a new line of energy drink for Red Bull. In a single paragraph` 
 `(200 words max) describe the new product or service (i.e. features, advantages,` `benefits, etc.) Be sure to also identify the target market of your new product or` `service (i.e. persona of the typical buyer).`
 
-E*TRADE has found satisfactory demand to release a new service that gives alerts once a certain market technical indicator reaches a given threshold (e.g. Relative Strength Index indicating an asset is oversold). This helps technical stock market traders with portfolios that contain many assets to keep track of buy/sell/hold signals without excessive manual monitoring and shifting between pages. The service works by sending an email alert with a link to the stock's page, which opens and displays a candle chart with a chart of the corresponding technical indicator below.
+I^TRADE has found satisfactory demand to release a new service that gives alerts once a certain market technical indicator reaches a given threshold (e.g. Relative Strength Index indicating an asset is oversold). This helps technical stock market traders with portfolios that contain many assets to keep track of buy/sell/hold signals without excessive manual monitoring and shifting between pages. The service works by sending an email alert with a link to the stock's page, which opens and displays a candle chart with a chart of the corresponding technical indicator below.
 
 ___
 
@@ -80,9 +80,9 @@ Serious stock traders can have portfolios of dozens of different assets. Technic
 
 Even if only a couple of indicators are used, repeatedly checking these numbers across a variety of stocks can be a very time-consuming process. Additionally, a lack of alert may result in the trader not seeing an important signal to buy or sell before others.
 
-E*TRADE releases a new service that gives alerts once a certain market technical indicator reaches a given threshold. This: 
+I^TRADE releases a new service that gives alerts once a certain market technical indicator reaches a given threshold. This: 
 
-1. Gives E*TRADE customers a trading advantage over other platforms
+1. Gives I^TRADE customers a trading advantage over other platforms
 
 2. Helps technical stock market traders with highly-diversified portfolios to keep track of buy/sell/hold signals 
 
@@ -93,7 +93,7 @@ The service works by sending an email alert with a link to the stock's page, whi
 * How much time will the service save technical traders?
     * determines whether project should be undergone and if it should be paid or free
   
-* E*TRADE does not currently have a service that alerts users based on technical indicator thresholds
+* I^TRADE does not currently have a service that alerts users based on technical indicator thresholds
 
 ### Research Problem
 
@@ -132,7 +132,7 @@ The service works by sending an email alert with a link to the stock's page, whi
 
 To be eligible for participating in this research experiment, traders would need to:
 
-1. Be an active client who has spent least 6 months managing their portfolio through the E*TRADE platform 
+1. Be an active client who has spent least 6 months managing their portfolio through the I^TRADE platform 
 
 2. Must use a technical trading approach as a strong influencing factor for buying or selling assets
 
@@ -177,7 +177,7 @@ After one month, researchers will set up an adjustable template for visualizatio
 * Upon completion, participants will receive 3 free months of the alert service after public release
     * at an estimated value of \$5 per month, this would be <b>\$30,000</b> if all 2000 participants finish the study
   
-* The E*TRADE platform automatically retrieves the necessary data from the user at the end of each trading day (they'd sign a waiver or legal document beforehand)
+* The I^TRADE platform automatically retrieves the necessary data from the user at the end of each trading day (they'd sign a waiver or legal document beforehand)
     * est. <b>\$2000</b> to set up website to dataset pipeline
   
 * The market researcher will send out surveys to participants on the last day of each month
@@ -237,7 +237,7 @@ The survey will also help determine how willing the customer is to pay for the s
 `online, telephone) and justify`
 
 * Online
-    * E*TRADE is an online service
+    * I^TRADE is an online service
 
 ## Mock survey {#part3-mocksurvey}
 
@@ -347,26 +347,16 @@ ___
 `In addition to the survey (#3), your client would like you to describe` 
 `an experiment that could be run (based on your research problem statement and design in #2)`
 
-1. Identify if customers save a significant amount of time looking through stock indicators by using the alert service
-    * pretty much the point of the service
-
-2. Check if time saved per stock is dependent on number of stocks
-    * helps identify more specific audience
-    * determines extent of service appeal 
-
-3. Check if time saved is dependent on total amount invested relative to personal income
-    * psychology: affects perceived probabilities and risk-taking; traders with higher risk investments may spend more time on nitpicking trades to begin with
-
-4. Test customer satisfaction on individual features of the alert service 
-    * have participants take a survey at the end of each month
-    * allows to adjust service throughout data collection process
 
 ## Experiment description {#part4-description}
 
-`a. Describe an experiment to test the viability of your new product/service` 
-`(150 words max)`
+`a. Briefly describe an experiment to test the viability of your new product/service` 
 
-Participants' would include traders with portfolio sizes that split them into three groups:
+An email will be sent out to all clients who have not opted out of receiving emails. The email will request that they fill out a short form to apply for a position in testing the new service. It will also inform them of relevant details from the experimental outline. Information from applications will then be verified. 
+
+Participants will use the service for a 3-month experimental period. A survey of 10 questions will be provided to each participant before starting and at the end of each month to measure subjective views. The rest of the data, such as number of stocks in a participant's portfolio, will be collected automatically through account data.
+
+After the first month of the study, researchers will design a template to graph and analyze the data based on the data structure and consistency. At the end of the experimental period, data will be visualized, analyzed, and presented.
 
 ## Identify variables {#part4-idvariables}
  
