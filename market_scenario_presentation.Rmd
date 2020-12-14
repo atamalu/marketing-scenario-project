@@ -26,18 +26,18 @@ slides > slide.title-slide hgroup h1 {
 
 ## Solution 
 
-* E*TRADE releases a new service that gives alerts once a certain market technical indicator reaches a given threshold. 
+* I^TRADE releases a new service that gives alerts once a certain market technical indicator reaches a given threshold. 
     * ex: Relative Strength Index (RSI) going above 70 suggests an asset is overbought
     
 This saves the customer valuable time and improves use of technical indicators to increase gains, prevent losses, etc.
 
 ## Benefits
 
-* Gives E*TRADE customers a trading advantage over other platforms
+* Gives I^TRADE customers a trading advantage over other platforms
 
 * Helps technical traders with highly-diversified portfolios to keep track of buy/sell signals
 
-## Execution 
+## Implementation
 
 The proposed service works as such:
 
@@ -80,5 +80,41 @@ knitr::kable(prnt.df, col.names=NULL)
 * Participants use service for three months
     * gives around 60 data points per participant
 
-* After one month, researchers will set up an adjustable template for visualization and analysis based that data
-    * gives frequent updates of how the study is going
+* After one month, researchers will set up an adjustable template for visualization and analysis based the data structure and consistency
+    * gives management and researchers updates of how the study is going
+
+## Data Collection
+
+* A survey of 10 questions will be provided to each participant before starting and at the end of each month to capture answers to personal and subjective questions
+    * helps track changes in interest over time
+    * helps with minor month-to-month adjustments
+    * provides an idea of how customers value the service in terms of money
+
+* The rest of the data will be collected automatically through account data
+    * i.e. number of stocks in portfolio
+
+* All data will be anonymized 
+
+# Experiment Description
+
+## Description (1)
+
+* An email will be sent out to all clients who have not opted out of receiving emails
+    * the email will request that they fill out a short form to apply for a position in testing the new service
+    * the email will also inform them of relevant details from the experimental outline
+
+* Information from applications will then be verified 
+
+## Description (2)
+
+* Participants will use the service for a 3-month experimental period
+
+* A survey of 10 questions will be provided to each participant before starting and at the end of each month to measure subjective views
+
+* The rest of the data, such as number of stocks in a participant's portfolio, will be collected automatically through account data
+
+## Description (3)
+
+* After the first month of the study, researchers will design a template to graph and analyze the data based on the data structure and consistency
+
+* At the end of the experimental period, data will be visualized, analyzed, and presented.
