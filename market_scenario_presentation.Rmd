@@ -1,5 +1,5 @@
 ---
-title: "Market Scenario Example: Presentation"
+title: "Market Research Scenario Example Presentation"
 output: 
   ioslides_presentation
 ---
