@@ -6,6 +6,6 @@ I was looking back through some files and found a prompt for designing a hypothe
 
 The prompt was repetitive so I made a presentation to display the most important parts of the hypothetical study.
 
-#### Full scenario
+#### [Full scenario](market_scenario_presentation.html)
 
 #### Presentation
