@@ -4,7 +4,7 @@ I was looking back through some files and found a prompt for designing a hypothe
 
 * <h3><a href="https://atamalu.github.io/marketing-scenario-project/market_scenario.html">Full Prompt Markdown</a></h3>
 * <h3><a href=https://atamalu.github.io/marketing-scenario-project/market_scenario_presentation.html">Presentation</a></h3>
-https://atamalu.github.io/marketing-scenario-project/market_scenario_presentation.html#1
+
 ___
 
 No real statistics for this project - just a small market research design setup.
