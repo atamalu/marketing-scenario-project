@@ -47,7 +47,7 @@ ___
 [Part 4: Experiment Design](#part4) <BR>
 <p class="indented">
   [i. Experiment Description](#part4-description) <BR>
-  [ii. Experimental Variables](#part4-idvariables)
+  [ii. Technical Analysis](#part4-technicalanalysis)
 </p>
 
 ___
@@ -60,7 +60,18 @@ ___
 `For instance, a new line of energy drink for Red Bull. In a single paragraph` 
 `(200 words max) describe the new product or service (i.e. features, advantages,` `benefits, etc.) Be sure to also identify the target market of your new product or` `service (i.e. persona of the typical buyer).`
 
-I^TRADE has found satisfactory demand to release a new service that gives alerts once a certain market technical indicator reaches a given threshold (e.g. Relative Strength Index indicating an asset is oversold). This helps technical stock market traders with portfolios that contain many assets to keep track of buy/sell/hold signals without excessive manual monitoring and shifting between pages. The service works by sending an email alert with a link to the stock's page, which opens and displays a candle chart with a chart of the corresponding technical indicator below.
+
+I^TRADE has found satisfactory demand to release a new service that gives alerts once a certain market technical indicator reaches a given threshold e.g. Relative Strength Index indicating an asset is oversold. This helps technical stock market traders with portfolios that contain many assets to keep track of buy/sell/hold signals without excessive manual monitoring and shifting between pages.
+
+<p><center>![](images/implementation_ex_1.png){width=350px}</center></p>
+
+The service works by sending an email alert with a link to the stock's page. The email provides a link to pages of stocks that are currently at or near the specified threshold. 
+
+<p><center>![](images/implementation_ex_2.png){width=350px}</center></p>
+
+The page will display a candle chart with a chart of the corresponding technical indicator(s) below
+
+<p><center>![](images/implementation_ex_3.png){width=350px}</center></p>
 
 ___
 
@@ -166,9 +177,13 @@ The study would require participants for three months
 
 <U>Report Writing</U>
 
-After one month, researchers will set up an adjustable template for visualization and analysis based that data. 
+During the first month month, researchers will set up an adjustable template for visualization and analysis based that data. 
+    * the template will be updated on the first week of every following month
+    * this gives frequent updates of how the study is going
 
-* this gives frequent updates of how the study is going
+The data will be analyzed at the end of each month and contrasted with all previously-completed surveys.
+
+![](./images/project_timeline.png)
 
 ### Budget & Spending
 
@@ -229,7 +244,8 @@ ___
 
 The objective of the survey(s) is to capture customer satisfaction with individual components of the new service. This will help with minor month-to-month adjustments of the service
   
-The survey will also help determine how willing the customer is to pay for the service, and how much they would pay for it. This both re-verifies sufficient demand for service and gets a better idea of the value of the service.
+The survey will also help determine how willing the customer is to pay for the service, and how much they would pay for it. 
+    * this re-verifies sufficient demand for service and gets a better idea of the perceived value of the service
 
 ## Survey Administration Method {#part3-administration}
 
@@ -356,26 +372,51 @@ An email will be sent out to all clients who have not opted out of receiving ema
 
 Participants will use the service for a 3-month experimental period. A survey of 10 questions will be provided to each participant before starting and at the end of each month to measure subjective views. The rest of the data, such as number of stocks in a participant's portfolio, will be collected automatically through account data.
 
-After the first month of the study, researchers will design a template to graph and analyze the data based on the data structure and consistency. At the end of the experimental period, data will be visualized, analyzed, and presented.
+During the first month of the study, researchers will design a template to graph and analyze the data based on the data structure and consistency. At the end of the experimental period, data will be visualized, analyzed, and presented.
 
-## Identify variables {#part4-idvariables}
- 
-`b. Identify the independent variable`
+## Technical Analysis {#part4-technicalanalysis}
 
-`c. Identify the dependent variable`
+`b. Provide a brief description of how the resulting data will be analyzed`
 
-`d. Identify at least one extraneous variable`
+### Modeling, Hypothesis Testing
 
-### IV
+A <i>proportional-odds regression model</i> will be applied to the survey response data
+    * this model allows us to look at how objective variables (e.g. salary, number of stocks in portfolio) affect survey questions individually 
 
-* Use of service or no use of service (before & after contrast)
+Using a regression framework also allows us to add categorical and pseudo-categorical independent variables (e.g. month) to the model
+    * contrast codes
 
-### DV
+___
 
-* Time spent analyzing technical indicators for currently-owned stocks
+The survey questions will also be split into 2 groups:
 
-### ExtV
+1. Product Effectiveness (2-3 questions) 
+    * measure of how useful the product is perceived to be
+2. Satisfaction with Service (7-8 questions) 
+    * compare customer expectations and actual satisfaction 
 
-* The ratio of money invested to personal income
+Each will result in separate models.
 
+Since the two question groups overlap conceptually - product usefulness impacts satisfaction with that product - the extent to which these groups correlate will be measured as well.
 
+___
+
+Repeated survey administration allows us to measure how time affects customer satisfaction as well
+    
+* this allows us to answer how customers decide on using the product for more than a short period of time
+  
+It will also help answer other potential questions, such as:
+
+* Does the perceived effectiveness of the product change based on time elapsed since expectations were established?
+    * contrast codes:
+      * expectation survey vs. month 1
+      * month 1 vs. month 3
+      * expectation survey vs. month 3
+
+* Does the desire for a feature to be added wane over time?
+    * all pairwise comparisons
+    * helmert contrasts
+  
+* On average across months, how do customer expectations differ from their post-use responses?
+    * orthogonal polynomial contrast codes
+      * expectation vs. averaged months

@@ -22,7 +22,7 @@ slides > slide.title-slide hgroup h1 {
 
 * Serious stock traders that take a technical approach can spend a lot of time monitoring indicators for dozens of portfolio assets
 
-* A lack of an alert system may result in the trader being late in seeing an important buy or sell signal 
+* Lack of an adequate alert system may result in the trader being late in seeing an important buy or sell signal 
 
 ## Solution 
 
@@ -37,24 +37,52 @@ This saves the customer valuable time and improves use of technical indicators t
 
 * Helps technical traders with highly-diversified portfolios to keep track of buy/sell signals
 
-## Implementation
-
-The proposed service works as such:
-
-1. Customer enters technical indicator(s) and details or thresholds to be alerted for 
-2. Email is sent with indicator details and a link to a customized webpage for that stock
-3. Once on the page, a candle chart is displayed with charts and figures of the corresponding technical indicators
-
-The user can set an option that pulls up charts of their other favorite indicators as well.
-
 ## Example 
 
 1. Customer wants to be alerted when the RSI for any stock in their portfolio passes above 70
 2. AAPL hits an RSI of over 70
-3. Customer receives link to AAPL's stock page and summarized numbers
+3. Customer receives email alert with a link to AAPL's stock page
 4. Webpage opens with candle chart and time series chart of RSI
 
+## Implementation
+
+1.) Customer enters technical indicator(s) and details or thresholds to be alerted for 
+<BR>
+<BR>
+![](images/implementation_ex_1.png){width=450px}
+ 
+## Implementation (2)
+ 
+2.) Email is sent with indicator details and a link to a customized webpage for that stock
+<BR>
+<BR>
+![](images/implementation_ex_2.png){width=450px}
+
+## Implementation (3)
+
+3.) On the linked page, a candlestick chart is displayed with graphs and figures of the corresponding technical indicators below
+<BR>
+<BR>
+![](images/implementation_ex_3.png){width=450px}
+
 # Design
+
+## Data Collection
+
+* A survey of 10 questions will be provided to each participant before starting and at the end of each month to capture answers to personal and subjective questions
+    * helps track changes in interest over time
+    * helps with minor month-to-month adjustments
+    * provides an idea of how customers value the service in terms of money
+
+## Data Collection (2)
+
+* The first survey will be used as an "expectation" survey
+    * Allows us to analyze customer satisfaction similarly to the [Kano model](https://www.mindtools.com/pages/article/newCT_97.htm)
+
+## Data Collection (3)
+
+* The rest of the data will be collected automatically through account data and anonymized
+    * i.e. number of stocks in portfolio
 
 ## Budget 
 
@@ -75,29 +103,21 @@ prnt.df <- cbind(a, b)
 knitr::kable(prnt.df, col.names=NULL)
 ```
 
+## Time Estimates (overview)
+
+![](images/project_timeline.png){width=700px,height=500px}
+
 ## Time Estimates
 
 * Participants use service for three months
     * gives around 60 data points per participant
 
-* After one month, researchers will set up an adjustable template for visualization and analysis based the data structure and consistency
+* While waiting for month 1's survey data, researchers will set up an adjustable template for visualization and analysis based the data structure and consistency
     * gives management and researchers updates of how the study is going
-
-## Data Collection
-
-* A survey of 10 questions will be provided to each participant before starting and at the end of each month to capture answers to personal and subjective questions
-    * helps track changes in interest over time
-    * helps with minor month-to-month adjustments
-    * provides an idea of how customers value the service in terms of money
-
-* The rest of the data will be collected automatically through account data
-    * i.e. number of stocks in portfolio
-
-* All data will be anonymized 
 
 # Experiment Description
 
-## Description (1)
+## Full Description (1)
 
 * An email will be sent out to all clients who have not opted out of receiving emails
     * the email will request that they fill out a short form to apply for a position in testing the new service
@@ -105,7 +125,7 @@ knitr::kable(prnt.df, col.names=NULL)
 
 * Information from applications will then be verified 
 
-## Description (2)
+## Full Description (2)
 
 * Participants will use the service for a 3-month experimental period
 
@@ -113,8 +133,9 @@ knitr::kable(prnt.df, col.names=NULL)
 
 * The rest of the data, such as number of stocks in a participant's portfolio, will be collected automatically through account data
 
-## Description (3)
+## Full Description (3)
 
-* After the first month of the study, researchers will design a template to graph and analyze the data based on the data structure and consistency
+* During the first month of the study, researchers will design a template to graph and analyze the data based on the data structure and consistency
 
 * At the end of the experimental period, data will be visualized, analyzed, and presented.
+
